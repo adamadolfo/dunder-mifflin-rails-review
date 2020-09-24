@@ -1,0 +1,5 @@
+<% @employees.each do |employee|%>
+<div><%= link_to employee.first_name + employee.last_name, employee_path(employee) %><div>
+<%end%>
+
+<% link_to "create", new_employee_path%>
